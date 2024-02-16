@@ -11,6 +11,7 @@ global.api = 'https://blogsadmin.nivarana.org/api/';
 // global.api = 'http://127.0.0.1:8000/api/';
 
 global.img_link = 'https://blogsadmin.nivarana.org/images/';
+
 // global.img_link = 'http://127.0.0.1:8000/images/';
 
 export default function App({ Component, pageProps }) {
