@@ -34,7 +34,7 @@ function authorDetails({ data }) {
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public.'
+              : "Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
           }
         />
         <meta
@@ -64,7 +64,7 @@ function authorDetails({ data }) {
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public.'
+              : "Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
           }
         />
         {/* twitter tags */}
@@ -77,7 +77,7 @@ function authorDetails({ data }) {
           content={
             data.meta_description !== null
               ? data.meta_description
-              : 'Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public.'
+              : "Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
           }
         />
         <meta
