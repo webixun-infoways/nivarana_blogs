@@ -32,6 +32,7 @@ export default function Document() {
       <body className="site-wrapper">
         <Main />
         <NextScript />
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="/js/jquery.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/custom.js"></script>

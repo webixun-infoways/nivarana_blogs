@@ -48,12 +48,12 @@ function Category({ metadata }) {
         <meta
           property="og:url"
           content={
-            'https://blogs.weazy.in/category/' + metadata.category_name.path
+            'https://nivarana.org/category/' + metadata.category_name.path
           }
         />
         <meta
           property="og:image"
-          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
+          content="https://nivarana.org/images/package/favicon-192x192.png"
         />
         <meta property="og:site_name" content="Nivarana" />
         <meta
@@ -62,7 +62,7 @@ function Category({ metadata }) {
         />
         {/* twitter tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="https://blogs.weazy.in" />
+        <meta name="twitter:site" content="https://nivarana.org" />
         <meta name="twitter:creator" content="Nivarana" />
         <meta
           name="twitter:title"
@@ -74,7 +74,7 @@ function Category({ metadata }) {
         />
         <meta
           name="twitter:image"
-          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
+          content="https://nivarana.org/images/package/favicon-192x192.png"
         />
       </Head>
       <Breadcrumb pageName={metadata.category_name.name} />

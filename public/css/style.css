@@ -833,8 +833,9 @@ body.down .header-classic .header-bottom.clone {
 }
 
 .navbar-brand img {
-  width: 85px;
+  width: 30%;
   height: auto;
+  margin-bottom: 10px;
 }
 
 .dropdown-menu {

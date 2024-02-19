@@ -66,39 +66,39 @@ function search() {
         {/* meta tags */}
         <meta
           name="description"
-          content="Nivarana: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
+          content="Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
         />
         <meta
           name="keywords"
-          content="Nivarana, Weazy Infotech, Technology, Nivarana,Innovation,Lifestyle,Education,Health,Travel,Science,Entertainment,Reviews,Insights,Blogging,Trends,Opinions,Ideas,Inspiration"
+          content="Public health, advocacy, research, India, health information, cancer, health, health information, health policy, health programs, digital health, awareness, health poetry"
         />
         <meta name="author" content="Weazy Infotech Pvt. Ltd," />
         {/* ogtags */}
         <meta property="og:locale" content="en_US" />
         <meta property="og:title" content="Nivarana" />
         <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://blogs.weazy.in" />
+        <meta property="og:url" content="https://nivarana.org" />
         <meta
           property="og:image"
-          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
+          content="https://nivarana.org/images/package/favicon-192x192.png"
         />
         <meta property="og:site_name" content="Nivarana" />
         <meta
           property="og:description"
-          content="Nivarana: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
+          content="Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
         />
         {/* twitter tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="https://blogs.weazy.in" />
+        <meta name="twitter:site" content="https://nivarana.org" />
         <meta name="twitter:creator" content="Nivarana" />
         <meta name="twitter:title" content="Nivarana" />
         <meta
           name="twitter:description"
-          content="Nivarana: Diverse, insightful platform with engaging content on tech, lifestyle, and more. Foster intellectual growth and community enrichment."
+          content="Nivarana is India's public health awareness and advocacy platform that aims to bring a change by making public health-related information and stories more understandable and accessible to the general public."
         />
         <meta
           name="twitter:image"
-          content="https://blogs.weazy.in/images/package/favicon-192x192.png"
+          content="https://nivarana.org/images/package/favicon-192x192.png"
         />
       </Head>
       {is_loading ? (

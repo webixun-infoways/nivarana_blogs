@@ -58,7 +58,7 @@ function SingleBlogData({ data }) {
                     <li className="list-inline-item">
                       <FacebookShareButton
                         url={
-                          'https://blogs.weazy.in/singleBlogDetails/' +
+                          'https://nivarana.org/singleBlogDetails/' +
                           data.path
                         }
                         quote={data.page_title}
@@ -70,7 +70,7 @@ function SingleBlogData({ data }) {
                     <li className="list-inline-item">
                       <WhatsappShareButton
                         url={
-                          'https://blogs.weazy.in/singleBlogDetails/' +
+                          'https://nivarana.org/singleBlogDetails/' +
                           data.path
                         }
                         title={data.page_title}

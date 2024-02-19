@@ -1,12 +1,31 @@
+import Sidebar from '@/components/common/Sidebar';
 import Head from 'next/head';
 import Link from 'next/link';
-import React from 'react';
+import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
 
-function Custom404() {
+function staticPage() {
+  const router = useRouter();
+  const [data, setData] = React.useState({});
+
+  useEffect(() => {
+    fetchData(router.query.staticPageSingle);
+  }, [router.query.staticPageSingle]);
+
+  const fetchData = async (e) => {
+    try {
+      const res = await fetch(global.api + 'fetch_static_page/' + e);
+      const data = await res.json();
+      setData(data.data);
+    } catch (error) {
+      console.log('error', error);
+    }
+  };
+
   return (
     <>
       <Head>
-        <title>404 | Nivarana</title>
+        <title>{data.page_title} | Nivarana</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link
@@ -65,29 +84,38 @@ function Custom404() {
           content="https://nivarana.org/images/package/favicon-192x192.png"
         />
       </Head>
+      <section className="page-header my-2">
+        <div className="container-xl">
+          <div className="text-center">
+            <h1 className="mt-0 mb-2">{data.page_title}</h1>
+            <nav aria-label="breadcrumb">
+              <ol className="breadcrumb justify-content-center mb-0">
+                <li className="breadcrumb-item">
+                  <Link href="/">Home</Link>
+                </li>
+                <li className="breadcrumb-item active" aria-current="page">
+                  {data.page_title}
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+
       <section className="main-content">
         <div className="container-xl">
           <div className="row gy-4">
-            <div className="col-lg-12 text-center text-lg-start text-white py-4">
-              <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12 d-flex align-items-center justify-content-center">
-                  <img
-                    src="/images/notFound.svg"
-                    alt="404"
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                  <h1 className="display-1 fw-bold">Error : 404</h1>
-                  <h1 className="display-1 fw-bold">Page Not Found</h1>
-                  <p className="lead">
-                    The page you are looking for does not exist.
-                  </p>
-                  <Link href="/" className="btn btn-default me-2">
-                    Go Home
-                  </Link>
-                </div>
+            <div className="col-lg-8">
+              <div className="page-content bordered rounded padding-30">
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: data.description,
+                  }}
+                />
               </div>
+            </div>
+            <div className="col-lg-4">
+              <Sidebar />
             </div>
           </div>
         </div>
@@ -96,4 +124,4 @@ function Custom404() {
   );
 }
 
-export default Custom404;
+export default staticPage;

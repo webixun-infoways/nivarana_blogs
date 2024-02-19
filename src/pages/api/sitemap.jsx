@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 import path from 'path';
 
 const postsDirectory = path.join(process.cwd(), 'posts');
-const URL = 'https://blogs.weazy.in';
+const URL = 'https://nivarana.org';
 function generateSiteMap(posts) {
   return `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">

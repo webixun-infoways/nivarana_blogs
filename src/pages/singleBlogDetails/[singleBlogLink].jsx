@@ -60,7 +60,7 @@ function singleBlogDetails({ data }) {
         <meta property="og:type" content="article" />
         <meta
           property="og:url"
-          content={'https://blogs.weazy.in/singleBlogDetails/' + data.path}
+          content={'https://nivarana.org/singleBlogDetails/' + data.path}
         />
         <meta
           property="og:image"
@@ -69,7 +69,7 @@ function singleBlogDetails({ data }) {
         <meta property="og:site_name" content="Nivarana" />
         <meta property="og:description" content={data.meta_description} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="https://blogs.weazy.in" />
+        <meta name="twitter:site" content="https://nivarana.org" />
         <meta name="twitter:creator" content="Nivarana" />
         <meta name="twitter:title" content={data.page_title} />
         <meta name="twitter:description" content={data.meta_description} />
