@@ -1,5 +1,5 @@
 import Sidebar from '@/components/common/Sidebar';
-import Comments from '@/components/singleBlog/Comments';
+// import Comments from '@/components/singleBlog/Comments';
 import moment from 'moment';
 import Link from 'next/link';
 
@@ -131,7 +131,7 @@ function SingleBlogData({ data }) {
               )}
             </div>
           </div>
-          <Comments title={data} />
+          {/* <Comments title={data} /> */}
         </div>
         <div className="col-lg-4">
           <Sidebar />

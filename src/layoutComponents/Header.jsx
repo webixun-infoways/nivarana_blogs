@@ -225,7 +225,7 @@ function Header() {
                 <img src="/images/logo.png" alt="logo" />
               </Link>
               <span className="slogan d-block">
-                Professional Writer &amp; Personal Blogger
+                India's Public Health Platform
               </span>
             </div>
             <div className="col-md-4 col-sm-12 col-xs-12">
